@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+   /**
+    font-family: 'Nunito', sans-serif !important; 
+    **/
+    font-family: 'Calibri', sans-serif !important;
+    background-color: #fbfcfe;
+}
+
+
+
+/*
+  FOOTER
+*/
+.socail_media_icon{
+    cursor: pointer;
+}
+footer{
+    margin-bottom: 20px;
+}
+/**Outer Links**/
+.footerNavigation{
+    border-left-color: #ff032d;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.footerNavigation h5{
+    font-weight: bold;
+}
+.footerOuterLinks{
+    margin-bottom: 70px;
+    color: black;
+}
+.footerOuterLinks .footerNavigation h6 a{
+    text-decoration: none !important;
+    color: black;
+}
+.footerOuterLinks .footerNavigation h6 a:hover {
+    color: #ff032d;
+    list-style: none;
+    text-decoration-style: none;
+}
+/**Socail Icons**/
+.footerNavigation ul li{
+    list-style-type: none;
+}

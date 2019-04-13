@@ -1,0 +1,24 @@
+:root{
+  --main-color: #272B4C;
+  --accent-color: #E75A51
+}
+
+body{
+  background-color: var(--main-color);
+}
+
+.center-align-objects {
+  align-items: center;
+
+}
+
+.left-align-objects {;
+  text-align: left;
+  align-items: flex-end;
+}
+
+.footerSocialMedia img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
