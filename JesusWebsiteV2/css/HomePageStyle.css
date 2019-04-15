@@ -23,8 +23,7 @@ body {
 
 .introCenterText {
     height: 600px;
-    background-image: url("/images/forsetblurred.jpg");
-    background-repeat: no-repeat;
+    background-image: url("/images/Protruding-Squares.svg");
     background-size: cover;
     display: flex;
     align-content: center;
