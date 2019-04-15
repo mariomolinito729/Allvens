@@ -21,6 +21,9 @@
   <!-- font aweeeesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 </head>
 
 <body>
@@ -51,7 +54,7 @@
 
   <div class="container-fluid introCenterText">
     <div class="jumbotron">
-      <h1 class="display-1">
+      <h1 class="display-1 animated zoomIn">
         Jesus Callejas
       </h1>
       <p>Software Developer / App Developer</p>
@@ -94,8 +97,10 @@
         </div>
 
         <div class="col-lg-8 skillsSection">
-            <h2 class="display-4 text-dark">Skills Honed.</h2>
-            <hr>
+          <section id="skillsHonedTitle">
+            <h2 class="display-4 text-dark " id="skillsHoned">Skills Honed.</h2>
+          </section>
+          <hr>
           <!-- first one is going to I suppose Java? -->
           <div class="row align-items-center">
             <div class="col-lg-1 col-sm-12">
@@ -112,7 +117,8 @@
           </div>
           <div class="row align-items-center">
             <div class="col-lg-1 ">
-              <span><img src="images/java.png" alt="" class="javaProgressImage" style="width: 80px; height: 100px;" /></span>
+              <span><img src="images/java.png" alt="" class="javaProgressImage"
+                  style="width: 80px; height: 100px;" /></span>
             </div>
             <!-- third one is going to I suppose ___ -->
             <div class="col-lg-11 col-sm-12">
@@ -124,8 +130,9 @@
           </div>
           <div class="row align-items-center">
             <div class="col-lg-1 col-sm-12">
-                <span><img src="images/android.png" alt="" class="javaProgressImage" style="width: 80px; height: 100px;" /></span>
-              </div>
+              <span><img src="images/android.png" alt="" class="javaProgressImage"
+                  style="width: 80px; height: 100px;" /></span>
+            </div>
             <div class="col col-lg-11">
               <div class="progress" style="height: 2rem; width: 100%;">
                 <div class="progress-bar" id="thirdSkillBar" role="progressbar" style="width: 70%;" aria-valuenow="100"
@@ -157,7 +164,7 @@
       </div>
       <div class="row align-items-center applicationsRow">
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
             <img class="card-img-top" src="images/icon.png" alt="" />
@@ -179,7 +186,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard2">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
 
@@ -203,7 +210,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard3">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
 
@@ -226,7 +233,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard4">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
 
@@ -266,7 +273,7 @@
       </div>
       <div class="row align-items-center applicationsRow">
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard5">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
             <img class="card-img-top" src="images/icon.png" alt="" />
@@ -288,30 +295,7 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
-            <h5 class="card-title text-dark">App Name</h5>
-            <hr align="left" id="underscoreApplicationName" />
-
-            <img class="card-img-top" src="images/icon.png" alt="" />
-            <div class="card-body">
-              <p class="text-dark ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam assumenda natus
-                dolorem autem odit facilis ex amet exercitationem suscipit dicta. Ullam tempore blanditiis laudantium,
-                incidunt est ab reiciendis dolore maxime.</p>
-              <!-- <p class="card-text mb-0">Some quick example text</p> -->
-              <a href="#" class="checkOutText">CHECK IT OUT <i class="far fa-hand-pointer"></i></a>
-              <hr id="seperateTagsAndCheckItOut" />
-              <div class="row align-items-center tagSections">
-                <div class="col-sm-12">
-                  <a href="#" class="badge badge-primary">Primary</a>
-                  <a href="#" class="badge badge-primary">Primary</a>
-                  <a href="#" class="badge badge-primary">Primary</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard6">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
 
@@ -334,7 +318,32 @@
           </div>
         </div>
         <div class="col-lg-3 col-sm-12">
-          <div class="card text-left">
+          <div class="card text-left hideAppCard" id="appCard7">
+            <h5 class="card-title text-dark">App Name</h5>
+            <hr align="left" id="underscoreApplicationName" />
+
+            <img class="card-img-top" src="images/icon.png" alt="" />
+            <div class="card-body">
+              <p class="text-dark ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam assumenda natus
+                dolorem autem odit facilis ex amet exercitationem suscipit dicta. Ullam tempore blanditiis laudantium,
+                incidunt est ab reiciendis dolore maxime.</p>
+              <!-- <p class="card-text mb-0">Some quick example text</p> -->
+              <section class="checkOutHolder">
+                  <a href="#" class="checkOutText">CHECK IT OUT <i class="far fa-hand-pointer"></i></a>
+              </section>
+              <hr id="seperateTagsAndCheckItOut" />
+              <div class="row align-items-center tagSections">
+                <div class="col-sm-12">
+                  <a href="#" class="badge badge-primary">Primary</a>
+                  <a href="#" class="badge badge-primary">Primary</a>
+                  <a href="#" class="badge badge-primary">Primary</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-12">
+          <div class="card text-left hideAppCard" id="appCard8">
             <h5 class="card-title text-dark">App Name</h5>
             <hr align="left" id="underscoreApplicationName" />
 
@@ -383,19 +392,19 @@
       </div>
       <div class="col-lg-2">
         <div class="card align-items-center">
-            <img class="card-img" src="images/python.png" alt="" />
-          </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="card align-items-center">
-            <img class="card-img" src="images/android.png" alt="" />
-          </div>
-      </div>
-      <div class="col-lg-2">
-        <div class="card align-items-center">
-              <img class="card-img" src="images/android.png" alt="" />
-            </div>
+          <img class="card-img" src="images/python.png" alt="" />
         </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card align-items-center">
+          <img class="card-img" src="images/android.png" alt="" />
+        </div>
+      </div>
+      <div class="col-lg-2">
+        <div class="card align-items-center">
+          <img class="card-img" src="images/android.png" alt="" />
+        </div>
+      </div>
 
     </div>
   </div>

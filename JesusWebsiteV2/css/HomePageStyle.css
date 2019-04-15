@@ -139,6 +139,13 @@ body {
 #productsSection h2 {
     font-weight: 400;
 }
+
+.hideAppCard {
+    visibility: hidden;
+}
+.revealAppCard {
+    visibility: visible;
+}
 .row .col-lg-3 #underscoreApplicationName {
     border: none;
     background-color: black;
