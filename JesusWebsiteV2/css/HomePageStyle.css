@@ -2,6 +2,8 @@ html,
 body {
     font-family: 'Raleway';
     color: white;
+    scroll-behavior: smooth;
+    background: url("/images/Protruding-Squares.svg");
 }
 
 .navbar {
@@ -23,13 +25,19 @@ body {
 
 .introCenterText {
     height: 600px;
-    background-image: url("/images/Protruding-Squares.svg");
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-content: center;
     align-items: center;
     text-align: center;
+}
 
+#currentSpotInPage {
+    background: white;
+    border-radius: 50% !important;
+    color: black !important;
+    padding: 1.2rem;
 }
 
 .jumbotron {
@@ -39,13 +47,19 @@ body {
 
 .jumbotron h1 {
     font-weight: 400;
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .jumbotron hr {
-    width: 30%;
+    width: 20%;
     border: none;
     background-color: white;
     height: 1px;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
 }
 
 .images {
@@ -56,7 +70,8 @@ body {
 .aboutMeSection {
     width: 100%;
     height: 100%;
-    margin: 7rem 0;
+    background: white;
+    padding: 4rem 2rem;
 }
 
 .aboutMeSection .container-fluid hr {
@@ -95,7 +110,7 @@ body {
 }
 
 .skillsSection {
-    padding: 2rem;
+    padding: 7rem 0;
     text-align: center;
 }
 
@@ -121,10 +136,16 @@ body {
 /* end of skills css */
 
 
+#onTopOfApps {
+    padding: 3rem;
+    background: white;
+}
+
+
 /* start of products section css */
 #productsSection {
-    background: black;
     padding: 3rem 0 3rem 0;
+    background: black;
 }
 
 #productsSection hr {
@@ -197,14 +218,23 @@ body {
     margin: 1.5rem 0 0 0;
 }
 
+.row .likedWhatYouSaw {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
 /* Great tech section */
 #greatTechSection {
-    padding: 5rem 0;
+    padding: 5rem 10rem;
     text-align: center;
+    background: white;
 }
 
 #greatTechSection h2 {
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.50);
+    text-shadow: 2px 1px 10px rgba(0, 0, 0, 0.25);
     font-weight: bold;
 }
 
@@ -257,6 +287,7 @@ body {
 
 #contactFormSection {
     padding: 6rem;
+    background: white;
 }
 #contactFormSection .container h1 {
     font-weight: bold;
@@ -271,6 +302,14 @@ body {
 #contactFormSection .emailHelp {
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+input {
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.50);
+}
+
+textarea {
+    box-shadow: -1px 1px 10px rgba(0, 0, 0, 0.50);
 }
 
 #contactFormSection label {
@@ -349,7 +388,7 @@ body {
         left: auto;
         /* margin-right: 1rem; */
         /* margin-left: 0.5rem; */
-        padding: 0 60px 60px 60px;
+        padding: 60px;
         background-color: white;
         box-shadow: none;
         max-width: 100%;
@@ -358,6 +397,7 @@ body {
     }
     .skillsSection  {
         margin: 0 2rem 2rem 2rem;
+        padding: 0;
     }
     .progress {
         padding-left: 0;

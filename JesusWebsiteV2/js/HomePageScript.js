@@ -9,8 +9,6 @@ $(document).ready(function() {
       $(".nav-item").removeClass("text-dark");
     } else {
       $(".navbar").removeClass("solid");
-      $(".nav-item").removeClass("text-white");
-      $(".nav-item").addClass("text-dark");
     }
 
     if ($(this).scrollTop() > 1000 && appCardsAnimated == false) {
@@ -37,6 +35,8 @@ $(document).ready(function() {
     }
   });
 });
+
+$('.navbar-nav').localScroll({duration:800});
 
 // $(".checkOutHolder").hover(function() {
 //     $(this).addClass("animated shake");
