@@ -24,7 +24,7 @@ body {
 }
 
 .introCenterText {
-    height: 600px;
+    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -35,9 +35,9 @@ body {
 
 #currentSpotInPage {
     background: white;
-    border-radius: 50% !important;
     color: black !important;
-    padding: 1.2rem;
+    border: white solid !important;
+    padding: 1rem;
 }
 
 .jumbotron {
@@ -188,6 +188,9 @@ body {
     padding: 2rem 1.2rem 1.2rem 1.2rem;
     margin-top: 1rem;
     border: none;
+}
+.applicationsRow .card:hover {
+    background: rgba(250, 250, 250, 0.685) !important;
 }
 
 #desktopApplicationsHeader {
@@ -368,6 +371,11 @@ textarea {
 .navbar.solid {
     background-color: black !important;
     transition: background-color 1s ease 0s;
+}
+
+#footerCanvas {
+    position: absolute;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 1440px) {
